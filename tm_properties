@@ -1,0 +1,14 @@
+softTabs = true
+tabSize = 2
+
+[ source.Makefile ]
+softTabs = false
+tabSize = 4
+
+[ source.js ]
+softTabs = true
+tabSize = 2
+
+[ source.coffee ]
+softTabs = true
+tabSize = 2
