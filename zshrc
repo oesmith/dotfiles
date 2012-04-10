@@ -44,7 +44,7 @@ export EDITOR=vim
 [[ -s /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 
 # nvm
-source ~/.nvm/nvm.sh
+[[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
 
 # dos2unix
 function dos2unix {
