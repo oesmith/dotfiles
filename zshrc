@@ -53,3 +53,13 @@ function dos2unix {
 
 # rvm
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+
+# HTTP monitoring
+alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+# cd MRU https://github.com/rupa/z
+source ~/.dotfiles/z/z.sh
+function precmd () {
+  _z --add "$(pwd -P)"
+}
