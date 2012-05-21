@@ -28,3 +28,6 @@
 [submodule "vim/bundle/vim-gemfile"]
 	path = vim/bundle/vim-gemfile
 	url = https://github.com/muz/vim-gemfile
+[submodule "vim/bundle/vim-arduino"]
+	path = vim/bundle/vim-arduino
+	url = https://github.com/kingbin/vim-arduino.git
