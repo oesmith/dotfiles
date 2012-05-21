@@ -74,3 +74,6 @@ set showcmd
 set t_Co=256
 
 nmap <Tab> :CtrlPMRU<CR>
+
+" Powerline
+let g:Powerline_symbols = 'fancy'
