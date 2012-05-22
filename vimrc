@@ -77,3 +77,11 @@ nmap <Tab> :CtrlPMRU<CR>
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
+
+" Execute open rspec buffer
+function! RunSpec(args)
+ let cmd = ":! bundle exec rspec " . a:args
+ execute cmd
+endfunction
+map !s :call RunSpec("%:" . <C-r>=line('.')<CR>)<CR>
+map !S :call RunSpec("%")<CR>

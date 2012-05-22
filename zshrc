@@ -63,3 +63,6 @@ source ~/.dotfiles/z/z.sh
 function precmd () {
   _z --add "$(pwd -P)"
 }
+
+# macvim
+[[ -x /Applications/MacVim.app/Contents/MacOS/Vim ]] && alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
