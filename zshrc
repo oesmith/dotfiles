@@ -51,9 +51,6 @@ function dos2unix {
   perl -pi -e 's/\r\n/\n/g' "$@"
 }
 
-# rvm
-[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
-
 # HTTP monitoring
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
