@@ -31,3 +31,6 @@
 [submodule "vim/bundle/vim-arduino"]
 	path = vim/bundle/vim-arduino
 	url = https://github.com/kingbin/vim-arduino.git
+[submodule "vim/bundle/vim-ack"]
+	path = vim/bundle/vim-ack
+	url = https://github.com/mileszs/ack.vim.git

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILES="vim vimrc gvimrc screenrc tm_properties zshrc tmux.conf \
+FILES="vim vimrc gvimrc screenrc tm_properties zshrc tmux.conf ackrc \
   zsh-custom/olly.zsh-theme:oh-my-zsh/custom/olly.zsh-theme"
 
 mklink() {
