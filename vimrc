@@ -60,11 +60,11 @@ set modeline
 set modelines=10
 
 " Default color scheme
-if has('gui_running')
+"if has('gui_running')
     set background=light
-else
-    set background=dark
-endif
+"else
+"    set background=dark
+"endif
 color solarized
 
 " Directories for swp files
