@@ -29,7 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git textmate rails ruby rvm brew bundler gem heroku npm node osx)
+plugins=(git textmate rails ruby rbenv brew bundler gem heroku npm node osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -63,3 +63,7 @@ function precmd () {
 
 # macvim
 [[ -x /Applications/MacVim.app/Contents/MacOS/Vim ]] && alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+
+# postgres
+alias pg_on="pg_ctl -D /Users/oliver/.brew/var/postgres -l /Users/oliver/.brew/var/postgres/server.log start"
+alias pg_off="pg_ctl -D /Users/oliver/.brew/var/postgres stop -s -m fast"
