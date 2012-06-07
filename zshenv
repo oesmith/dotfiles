@@ -1,2 +1,3 @@
-# rvm
-[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
