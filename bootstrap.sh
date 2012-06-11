@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 FILES="vim vimrc gvimrc screenrc tm_properties zshrc zshenv tmux.conf ackrc \
   zsh-custom/olly.zsh-theme:oh-my-zsh/custom/olly.zsh-theme"
@@ -10,7 +10,11 @@ mklink() {
     DEST=~/.$2
   fi
   if [[ -d ~/.dotfiles/$1 ]] ; then
-    ln -sfh ~/.dotfiles/$1 $DEST
+    if [[ `uname` == 'Darwin' ]] ; then
+      ln -sfh ~/.dotfiles/$1 $DEST
+    else
+      ln -sfT ~/.dotfiles/$1 $DEST
+    fi
   else
     ln -sf ~/.dotfiles/$1 $DEST
   fi
