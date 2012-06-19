@@ -67,3 +67,7 @@ function precmd () {
 # postgres
 alias pg_on="pg_ctl -D /Users/oliver/.brew/var/postgres -l /Users/oliver/.brew/var/postgres/server.log start"
 alias pg_off="pg_ctl -D /Users/oliver/.brew/var/postgres stop -s -m fast"
+
+# rails shortcuts
+alias dbup="rake db:setup && rake db:test:prepare"
+alias dbupp="rake db:setup && rake db:test:prepare && rake parallel:create && rake parallel:prepare"
