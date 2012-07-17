@@ -71,3 +71,4 @@ alias pg_off="pg_ctl -D /Users/oliver/.brew/var/postgres stop -s -m fast"
 # rails shortcuts
 alias dbup="rake db:setup && rake db:test:prepare"
 alias dbupp="rake db:setup && rake db:test:prepare && rake parallel:create && rake parallel:prepare"
+alias examples='for i in *.example ; do cp "$i" "$(basename $i .example)" ; done'
