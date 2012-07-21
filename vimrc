@@ -19,6 +19,7 @@ set list listchars=tab:\ \ ,trail:·
 set wrap
 set showbreak=»\ \ \ 
 set linebreak
+set colorcolumn=80
 
 " enable mouse interaction (with iTerm)
 set mouse=a
