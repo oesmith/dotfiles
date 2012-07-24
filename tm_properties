@@ -1,6 +1,6 @@
 softTabs = true
 tabSize = 2
-excludeInFolderSearch = "{$exclude,log,tmp,db,node_modules}"
+excludeInFolderSearch = "{$exclude,log/**/*.log,node_modules/**/*,*.rdb,db/**/*,tmp/**/*}"
 
 [ source.Makefile ]
 softTabs = false
