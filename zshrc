@@ -1,3 +1,5 @@
+export PATH=$PATH:~/.brew/bin:~/Projects/Libraries/bin
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -37,7 +39,6 @@ source $ZSH/oh-my-zsh.sh
 
 unsetopt correct_all
 
-export PATH=$PATH:~/.brew/bin:~/Projects/Libraries/bin
 export EDITOR=vim
 
 # virtualenvwrapper

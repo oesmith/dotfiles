@@ -79,7 +79,7 @@ set t_Co=256
 
 nmap <Tab> :CtrlPMRU<CR>
 
-nmap <Leader>t :NERDTree<CR>
+nmap <Leader>t :NERDTreeToggle<CR>
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
