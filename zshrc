@@ -69,7 +69,28 @@ function precmd () {
 alias pg_on="pg_ctl -D /Users/oliver/.brew/var/postgres -l /Users/oliver/.brew/var/postgres/server.log start"
 alias pg_off="pg_ctl -D /Users/oliver/.brew/var/postgres stop -s -m fast"
 
+# git
+alias ga='git add'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+
 # rails shortcuts
 alias dbup="rake db:setup && rake db:test:prepare"
 alias dbupp="rake db:setup && rake db:test:prepare && rake parallel:create && rake parallel:prepare"
 alias examples='for i in *.example ; do cp "$i" "$(basename $i .example)" ; done'
+
+# bundled rails, since we use git gems mostly @ WildFire
+eval "function bundled_rails () { _run-with-bundler rails \$@}"
+alias rails=bundled_rails
+compdef _rails bundled_rails=rails
