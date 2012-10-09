@@ -51,6 +51,9 @@ export EDITOR=vim
 function dos2unix {
   perl -pi -e 's/\r\n/\n/g' "$@"
 }
+function mac2unix {
+  perl -pi -e 's/\r/\n/g' "$@"
+}
 
 # HTTP monitoring
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
