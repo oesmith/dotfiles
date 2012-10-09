@@ -1,4 +1,4 @@
-export PATH=$PATH:~/.brew/bin:~/Projects/Libraries/bin
+export PATH=$PATH:/usr/local/sbin:~/.brew/bin:~/Projects/Libraries/bin
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -66,8 +66,9 @@ function precmd () {
 [[ -x /Applications/MacVim.app/Contents/MacOS/Vim ]] && alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 # postgres
-alias pg_on="pg_ctl -D /Users/oliver/.brew/var/postgres -l /Users/oliver/.brew/var/postgres/server.log start"
-alias pg_off="pg_ctl -D /Users/oliver/.brew/var/postgres stop -s -m fast"
+HOMEBREW_PREFIX=$(brew --config | grep PREFIX | awk '{print $2}')
+alias pg_on="pg_ctl -D $HOMEBREW_PREFIX/var/postgres -l $HOMEBREW_PREFIX/var/postgres/server.log start"
+alias pg_off="pg_ctl -D $HOMEBREW_PREFIX/var/postgres stop -s -m fast"
 
 # git
 alias ga='git add'
@@ -94,3 +95,12 @@ alias examples='for i in *.example ; do cp "$i" "$(basename $i .example)" ; done
 eval "function bundled_rails () { _run-with-bundler rails \$@}"
 alias rails=bundled_rails
 compdef _rails bundled_rails=rails
+
+# generate self-signed certificates
+function sslcert () {
+  openssl genrsa -des3 -out $PWD/$1.orig.key 2048
+  openssl rsa -in $PWD/$1.orig.key -out $PWD/$1.key
+  openssl req -new -key $PWD/$1.key -out $PWD/$1.csr
+  openssl x509 -req -days 365 -in $PWD/$1.csr -signkey $PWD/$1.key -out $PWD/$1.crt
+  rm $1.orig.key $1.csr
+}
