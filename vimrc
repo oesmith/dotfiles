@@ -62,7 +62,7 @@ set modelines=10
 
 " Default color scheme
 if has('gui_running')
-    set background=light
+    set background=dark
     color solarized
 else
     set background=dark
