@@ -61,12 +61,13 @@ set modeline
 set modelines=10
 
 " Default color scheme
-"if has('gui_running')
+if has('gui_running')
     set background=light
-"else
-"    set background=dark
-"endif
-color solarized
+    color solarized
+else
+    set background=dark
+    color railscasts
+endif
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -76,6 +77,11 @@ set directory=~/.vim/backup
 set showcmd
 
 set t_Co=256
+
+if has("gui_macvim")
+  let macvim_hig_shift_movement=1
+  set guifont=Source\ Code\ Pro:h13
+endif
 
 nmap <Tab> :CtrlPMRU<CR>
 
