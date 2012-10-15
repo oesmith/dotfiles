@@ -44,6 +44,10 @@ set clipboard=unnamed
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
+" Switch background color
+map <Leader>l :set background=light<CR>
+map <Leader>d :set background=dark<CR>
+
 " make uses real tabs
 au FileType make set noexpandtab
 
