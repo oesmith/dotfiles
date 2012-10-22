@@ -69,9 +69,11 @@ function precmd () {
 [[ -x /Applications/MacVim.app/Contents/MacOS/Vim ]] && alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 # postgres
-HOMEBREW_PREFIX=$(brew --config | grep PREFIX | awk '{print $2}')
-alias pg_on="pg_ctl -D $HOMEBREW_PREFIX/var/postgres -l $HOMEBREW_PREFIX/var/postgres/server.log start"
-alias pg_off="pg_ctl -D $HOMEBREW_PREFIX/var/postgres stop -s -m fast"
+if which brew &> /dev/null ; then
+  HOMEBREW_PREFIX=$(brew --config | grep PREFIX | awk '{print $2}')
+  alias pg_on="pg_ctl -D $HOMEBREW_PREFIX/var/postgres -l $HOMEBREW_PREFIX/var/postgres/server.log start"
+  alias pg_off="pg_ctl -D $HOMEBREW_PREFIX/var/postgres stop -s -m fast"
+fi
 
 # git
 alias ga='git add'

@@ -19,7 +19,9 @@ set list listchars=tab:\ \ ,trail:·
 set wrap
 set showbreak=»\ \ \ 
 set linebreak
-set colorcolumn=80
+if has('gui_macvim')
+  set colorcolumn=80
+endif
 
 " enable mouse interaction (with iTerm)
 set mouse=a
