@@ -107,3 +107,6 @@ function sslcert () {
   openssl x509 -req -days 365 -in $PWD/$1.csr -signkey $PWD/$1.key -out $PWD/$1.crt
   rm $1.orig.key $1.csr
 }
+
+# focus for rspec
+alias focus="[[ -d ./spec/support ]] && cp ~/.dotfiles/lib/oesmith-rspec-focus.rb ./spec/support/"
