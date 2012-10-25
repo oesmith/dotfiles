@@ -94,7 +94,17 @@ alias gcl='git clone'
 # rails shortcuts
 alias dbup="rake db:setup && rake db:test:prepare"
 alias dbupp="rake db:setup && rake db:test:prepare && rake parallel:create && rake parallel:prepare"
-alias examples='for i in *.example ; do cp "$i" "$(basename $i .example)" ; done'
+function examples() {
+  if [[ -d examples ]]
+  then
+    cp examples/*.yml .
+  else
+    for i in *.example
+    do
+      cp "$i" "$(basename $i .example)"
+    done
+  fi
+}
 
 # bundled rails, since we use git gems mostly @ WildFire
 eval "function bundled_rails () { _run-with-bundler rails \$@}"
