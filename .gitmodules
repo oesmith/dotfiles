@@ -64,3 +64,6 @@
 [submodule "vim/bundle/vim-idleFingers"]
 	path = vim/bundle/vim-idleFingers
 	url = https://github.com/shinzui/vim-idleFingers.git
+[submodule "vim/bundle/vim-color-raggi"]
+	path = vim/bundle/vim-color-raggi
+	url = https://github.com/raggi/vim-color-raggi.git
