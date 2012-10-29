@@ -21,6 +21,7 @@ set showbreak=»\ \ \
 set linebreak
 if has('gui_macvim')
   set colorcolumn=80
+  set cursorline
 endif
 
 " enable mouse interaction (with iTerm)
@@ -83,11 +84,6 @@ set directory=~/.vim/backup
 set showcmd
 
 set t_Co=256
-
-if has("gui_macvim")
-  let macvim_hig_shift_movement=1
-  set guifont=Source\ Code\ Pro:h13
-endif
 
 nmap <Tab> :CtrlPMRU<CR>
 
