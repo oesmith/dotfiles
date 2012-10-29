@@ -98,6 +98,9 @@ function examples() {
   if [[ -d examples ]]
   then
     cp examples/*.yml .
+  elif [[ -d example ]]
+  then
+    cp example/*.yml .
   else
     for i in *.example
     do
