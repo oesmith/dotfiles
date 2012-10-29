@@ -2,3 +2,5 @@
 ruby=.haml,.rake,.rsel
 --type-add
 css=.sass,.scss,.less
+--type-add
+js=.coffee
