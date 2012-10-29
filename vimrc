@@ -21,6 +21,7 @@ set showbreak=»\ \ \
 set linebreak
 if has('gui_macvim')
   set colorcolumn=80
+  set cursorline
 endif
 
 " enable mouse interaction (with iTerm)
