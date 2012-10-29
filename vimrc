@@ -85,16 +85,6 @@ set showcmd
 
 set t_Co=256
 
-if has("gui_macvim")
-  let macvim_hig_shift_movement=1
-  set guifont=Source\ Code\ Pro:h13
-  set guioptions-=L
-  set guioptions-=l
-  set guioptions-=R
-  set guioptions-=r
-  set guioptions-=b
-endif
-
 nmap <Tab> :CtrlPMRU<CR>
 
 nmap <Leader>t :NERDTreeToggle<CR>

@@ -1,15 +1,6 @@
 if has("gui_macvim")
-  " Nice fontage
-  set gfn=Monaco:h12
-  set linespace=4
-
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
-
-  " Command-T for CommandT
-  macmenu &File.New\ Tab key=<D-T>
-  map <D-t> :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
 
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
@@ -19,4 +10,17 @@ if has("gui_macvim")
 
   " Start without the toolbar
   set guioptions-=T
+
+  " Shift-select stuff, mac style
+  let macvim_hig_shift_movement=1
+
+  " Nice fonts
+  set guifont=Source\ Code\ Pro:h13
+
+  " No scrollbars
+  set guioptions-=L
+  set guioptions-=l
+  set guioptions-=R
+  set guioptions-=r
+  set guioptions-=b
 endif
