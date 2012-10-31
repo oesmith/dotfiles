@@ -11,9 +11,6 @@ if has("gui_macvim")
   " Start without the toolbar
   set guioptions-=T
 
-  " Shift-select stuff, mac style
-  let macvim_hig_shift_movement=1
-
   " Nice fonts
   set guifont=Source\ Code\ Pro:h13
 
