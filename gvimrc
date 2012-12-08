@@ -12,7 +12,7 @@ if has("gui_macvim")
   set guioptions-=T
 
   " Nice fonts
-  set guifont=Source\ Code\ Pro:h13
+  set guifont=Source\ Code\ Pro:h12
 
   " No scrollbars
   set guioptions-=L
