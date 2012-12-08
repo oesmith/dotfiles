@@ -1,0 +1,41 @@
+Xft.dpi: 96
+Xft.lcdfilter: lcddefault
+Xft.antialias: true
+Xft.hinting:true
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+*customization: -color
+
+URxvt*font: xft:Source Code Pro for Powerline:size=11
+!URxvt*boldFont: xft:Source Code Pro for Powerline:size=10
+!URxvt*italicFont: xft:Source Code Pro for Powerline:size=10
+!URxvt*boldItalicFont: xft:Source Code Pro for Powerline:size=10
+URxvt*jumpScroll: true
+URxvt*cursorColor: Grey
+URxvt*loginShell: False
+URxvt*termName: xterm-256color
+URxvt*scrollBar: False
+URxvt*saveLines:    10000
+URxvt*cursorBlink:    True
+URxvt*perl-ext-common:    default,matcher
+URxvt*urlLauncher:    simplebrowser
+URxvt*letterSpace: -1
+
+URxvt*background: #000000
+URxvt*foreground: #D3D2D3
+URxvt*color0: #000000
+URxvt*color1: #FF7768
+URxvt*color2: #ABFA68
+URxvt*color3: #FFFD88
+URxvt*color4: #98D0FE
+URxvt*color5: #FF85FD
+URxvt*color6: #CACBFE
+URxvt*color7: #EFEFEF
+URxvt*color8: #848484
+URxvt*color9: #FFBCB5
+URxvt*color10: #D1FCB1
+URxvt*color11: #FFFDD0
+URxvt*color12: #BADFFF
+URxvt*color13: #FFA9FE
+URxvt*color14: #E2E3FE
+URxvt*color15: #FFFFFF

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FILES="vim vimrc gvimrc screenrc tm_properties zshrc zshenv tmux.conf ackrc \
-  zsh-custom/olly.zsh-theme:oh-my-zsh/custom/olly.zsh-theme"
+  Xdefaults zsh-custom/olly.zsh-theme:oh-my-zsh/custom/olly.zsh-theme"
 
 mklink() {
   if [[ -z "$2" ]] ; then
