@@ -43,7 +43,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 set laststatus=2
 
 " OS X clipboard integration
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
@@ -100,3 +100,5 @@ function! RunSpec(args)
 endfunction
 map !s :call RunSpec("%:" . <C-r>=line('.')<CR>)<CR>
 map !S :call RunSpec("%")<CR>
+
+source $HOME/.vimrc.local
