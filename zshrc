@@ -125,3 +125,6 @@ function sslcert () {
 
 # focus for rspec
 alias focus="[[ -d ./spec/support ]] && cp ~/.dotfiles/lib/oesmith-rspec-focus.rb ./spec/support/"
+
+# local zsh
+[[ -f ~/.zshrc.local ]] && source $HOME/.zshrc.local
