@@ -19,11 +19,19 @@ set list listchars=tab:\ \ ,trail:·
 set wrap
 set showbreak=»\ \ \ 
 set linebreak
+
 if has('gui_macvim')
   set colorcolumn=80
   set cursorline
   " Shift-select stuff, mac style
   let macvim_hig_shift_movement=1
+else
+  augroup vimrc_autocmds
+    autocmd BufEnter * highlight OverLength ctermbg=red guibg=red
+    autocmd BufEnter * match OverLength /\%79v.*/
+  augroup END
+  " highlight OverLength ctermbg=darkred ctermfg=white
+  " match OverLength /\%81v.\+/
 endif
 
 " enable mouse interaction (with iTerm)
@@ -70,12 +78,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-if has('gui_running')
-    color raggi
-else
-    set background=dark
-    color railscasts
-endif
+color raggi
 
 " Directories for swp files
 set backupdir=~/.vim/backup
