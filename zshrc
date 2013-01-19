@@ -31,7 +31,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git textmate rails ruby rbenv brew bundler gem heroku npm node osx)
+plugins=(git rails ruby rbenv brew bundler gem heroku npm node osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -42,7 +42,7 @@ unsetopt correct_all
 export EDITOR=vim
 
 # virtualenvwrapper
-[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+# [[ -s /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 
 # nvm
 [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
