@@ -6,10 +6,10 @@ ZSH_THEME_GIT_PROMPT_SUFFIX=""
 function my_git_prompt_info() {
   if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
     ref=$(git symbolic-ref HEAD 2> /dev/null)
-    echo "%{$fg[yellow]%}${ref#refs/heads/} $(parse_git_dirty)"
+    echo "${ref#refs/heads/} %B$(parse_git_dirty)%b %{$reset_color%}"
   else
-    echo "%{$fg[white]%}%B»%b"
+    echo "»"
   fi
 }
 
-PROMPT='%{$fg[white]%}%m %{$reset_color%}%2d $(my_git_prompt_info) %{$reset_color%}'
+PROMPT='%m %B%2d%b $(my_git_prompt_info) '
