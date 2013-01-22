@@ -67,3 +67,6 @@
 #[submodule "vim/bundle/vim-color-raggi"]
 #	path = vim/bundle/vim-color-raggi
 #	url = git@github.com:raggi/vim-color-raggi.git
+[submodule "vim/bundle/vim-color-raggi"]
+	path = vim/bundle/vim-color-raggi
+	url = git@github.com:raggi/vim-color-raggi.git
