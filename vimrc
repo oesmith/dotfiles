@@ -27,7 +27,7 @@ if has('gui_macvim')
   let macvim_hig_shift_movement=1
 else
   augroup vimrc_autocmds
-    autocmd BufEnter * highlight OverLength ctermbg=lightgray guibg=lightgray
+    autocmd BufEnter * highlight OverLength ctermbg=217
     autocmd BufEnter * match OverLength /\%81v.*/
   augroup END
   " highlight OverLength ctermbg=darkred ctermfg=white
