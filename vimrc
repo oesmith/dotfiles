@@ -6,6 +6,8 @@ set number
 set ruler
 syntax on
 
+let mapleader=","
+
 " encoding
 set encoding=utf-8
 
@@ -89,7 +91,7 @@ set showcmd
 
 set t_Co=256
 
-nmap <Tab> :CtrlPMRU<CR>
+nmap <Leader><Leader> :CtrlPMRU<CR>
 
 nmap <Leader>t :NERDTreeToggle<CR>
 
