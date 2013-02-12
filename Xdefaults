@@ -1,41 +1,60 @@
 Xft.dpi: 96
 Xft.lcdfilter: lcddefault
-Xft.antialias: true
-Xft.hinting:true
-Xft.hintstyle: hintfull
-Xft.rgba: rgb
+! Xft.antialias: true
+Xft.hinting: true
+! Xft.hintstyle: hintfull
+! Xft.rgba: rgb
 *customization: -color
 
 URxvt*font: xft:Source Code Pro for Powerline:size=11
-!URxvt*boldFont: xft:Source Code Pro for Powerline:size=10
-!URxvt*italicFont: xft:Source Code Pro for Powerline:size=10
-!URxvt*boldItalicFont: xft:Source Code Pro for Powerline:size=10
+URxvt*letterSpace: -1
 URxvt*jumpScroll: true
-URxvt*cursorColor: Grey
 URxvt*loginShell: False
 URxvt*termName: xterm-256color
 URxvt*scrollBar: False
-URxvt*saveLines:    10000
-URxvt*cursorBlink:    True
-URxvt*perl-ext-common:    default,matcher
-URxvt*urlLauncher:    simplebrowser
-URxvt*letterSpace: -1
+URxvt*saveLines: 10000
+URxvt*cursorBlink: True
+URxvt*perl-ext-common: default,matcher
+URxvt*urlLauncher: /usr/bin/google-chrome
+URxvt*intensityStyles: False
 
-URxvt*background: #000000
-URxvt*foreground: #D3D2D3
+URxvt.keysym.C-S-c: perl:clipboard:copy
+URxvt.keysym.C-S-v: perl:clipboard:paste
+URxvt.copyCommand: xsel -ib
+URxvt.pasteCommand: xsel -ob
+
+URxvt*cursorColor: #BDBDBD
+URxvt*background: #F3F3F3
+URxvt*foreground: #272727
 URxvt*color0: #000000
-URxvt*color1: #FF7768
-URxvt*color2: #ABFA68
-URxvt*color3: #FFFD88
-URxvt*color4: #98D0FE
-URxvt*color5: #FF85FD
-URxvt*color6: #CACBFE
-URxvt*color7: #EFEFEF
-URxvt*color8: #848484
-URxvt*color9: #FFBCB5
-URxvt*color10: #D1FCB1
-URxvt*color11: #FFFDD0
-URxvt*color12: #BADFFF
-URxvt*color13: #FFA9FE
-URxvt*color14: #E2E3FE
+URxvt*color1: #A74C4C
+URxvt*color2: #6D9447
+URxvt*color3: #BCA562
+URxvt*color4: #526398
+URxvt*color5: #9B4F83
+URxvt*color6: #336685
+URxvt*color7: #999999
+URxvt*color8: #666666
+URxvt*color9: #FF6161
+URxvt*color10: #72B83E
+URxvt*color11: #F2D47E
+URxvt*color12: #4C68CE
+URxvt*color13: #C765A8
+URxvt*color14: #3E8BC2
 URxvt*color15: #FFFFFF
+! URxvt*color0: #000000
+! URxvt*color1: #FF7768
+! URxvt*color2: #ABFA68
+! URxvt*color3: #FFFD88
+! URxvt*color4: #98D0FE
+! URxvt*color5: #FF85FD
+! URxvt*color6: #CACBFE
+! URxvt*color7: #EFEFEF
+! URxvt*color8: #848484
+! URxvt*color9: #FFBCB5
+! URxvt*color10: #D1FCB1
+! URxvt*color11: #FFFDD0
+! URxvt*color12: #BADFFF
+! URxvt*color13: #FFA9FE
+! URxvt*color14: #E2E3FE
+! URxvt*color15: #FFFFFF
