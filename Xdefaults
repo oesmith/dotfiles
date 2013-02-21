@@ -1,27 +1,26 @@
 Xft.dpi: 96
 Xft.lcdfilter: lcddefault
-! Xft.antialias: true
-Xft.hinting: true
-! Xft.hintstyle: hintfull
-! Xft.rgba: rgb
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.autohint: 0
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
 *customization: -color
 
 URxvt*font: xft:Source Code Pro for Powerline:size=11
 URxvt*letterSpace: -1
 URxvt*jumpScroll: true
 URxvt*loginShell: False
-URxvt*termName: xterm-256color
+! URxvt*termName: xterm-256color
 URxvt*scrollBar: False
 URxvt*saveLines: 10000
 URxvt*cursorBlink: True
-URxvt*perl-ext-common: default,matcher
+URxvt*perl-ext-common: default,matcher,clipboard
 URxvt*urlLauncher: /usr/bin/google-chrome
+URxvt*matcher.button: 1
 URxvt*intensityStyles: False
 
-URxvt.keysym.C-S-c: perl:clipboard:copy
-URxvt.keysym.C-S-v: perl:clipboard:paste
-URxvt.copyCommand: xsel -ib
-URxvt.pasteCommand: xsel -ob
+URxvt.keysym.Mod4-v: perl:clipboard:paste
 
 URxvt*cursorColor: #BDBDBD
 URxvt*background: #F3F3F3
