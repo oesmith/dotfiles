@@ -17,24 +17,16 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set list listchars=tab:\ \ ,trail:·
+set list listchars=tab:\ \ ,trail:×
 set wrap
 set showbreak=»\ \ \ 
 set linebreak
 
-if has('gui_macvim')
-  set colorcolumn=80
-  set cursorline
-  " Shift-select stuff, mac style
-  let macvim_hig_shift_movement=1
-else
-  augroup vimrc_autocmds
-    autocmd BufEnter * highlight OverLength ctermbg=217
-    autocmd BufEnter * match OverLength /\%81v.*/
-  augroup END
-  " highlight OverLength ctermbg=darkred ctermfg=white
-  " match OverLength /\%81v.\+/
-endif
+" Hilight long lines in HOTPINK
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength ctermbg=217
+  autocmd BufEnter * match OverLength /\%81v.*/
+augroup END
 
 " enable mouse interaction (with iTerm)
 set mouse=a
@@ -52,16 +44,10 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 " Status bar
 set laststatus=2
 
-" OS X clipboard integration
-" set clipboard=unnamed
-
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
-" Switch background color
-map <Leader>l :set background=light<CR>
-map <Leader>d :set background=dark<CR>
 
 " make uses real tabs
 au FileType make set noexpandtab
@@ -79,8 +65,10 @@ filetype plugin indent on
 set modeline
 set modelines=10
 
-" Default color scheme
+" Color schemes
 color raggi
+map <Leader>l :color raggi<CR>
+map <Leader>d :color Tomorrow-Night<CR>
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -91,14 +79,17 @@ set showcmd
 
 set t_Co=256
 
+" Miscellaneous useful bindings
 nmap <Leader><Leader> :CtrlPMRU<CR>
-
 nmap <Leader>t :NERDTreeToggle<CR>
+nmap <Leader>p :set paste!<CR>
+nmap <Leader>h :set hlsearch!<CR>
+nmap <Leader>. :e#<CR>
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
 
-" Execute open rspec buffer
+" run rspec on current buffer
 function! RunSpec(args)
  let cmd = ":! bundle exec rspec " . a:args
  execute cmd
