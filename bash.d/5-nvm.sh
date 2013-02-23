@@ -1,0 +1,1 @@
+/Users/oliver/.nvm/nvm.sh
