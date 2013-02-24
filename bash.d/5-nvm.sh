@@ -1,1 +1,1 @@
-/Users/oliver/.nvm/nvm.sh
+[[ -r ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
