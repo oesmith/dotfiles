@@ -2,6 +2,7 @@
 alias be="bundle exec"
 alias dbup="bundle exec rake db:setup && bundle exec rake db:test:prepare"
 alias dbupp="bundle exec rake db:setup && bundle exec rake db:test:prepare && bundle exec rake parallel:create && bundle exec rake parallel:prepare"
+alias rps="xvfb-run bundle exec rake parallel:spec"
 
 # copy example config files in $RAILS_ROOT/config/examples
 function examples() {
