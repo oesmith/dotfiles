@@ -7,7 +7,7 @@ Xft.hintstyle: hintfull
 Xft.rgba: rgb
 *customization: -color
 
-URxvt*font: xft:Source Code Pro for Powerline:size=11
+URxvt*font: xft:Source Code Pro for Powerline:size=10
 URxvt*letterSpace: -1
 URxvt*jumpScroll: true
 URxvt*loginShell: False
