@@ -22,9 +22,9 @@ set wrap
 set showbreak=»\ \ \ 
 set linebreak
 
-" Hilight long lines in HOTPINK
+" Hilight long lines
 augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength ctermbg=217
+  autocmd BufEnter * highlight OverLength cterm=underline
   autocmd BufEnter * match OverLength /\%81v.*/
 augroup END
 
@@ -68,7 +68,7 @@ set modelines=10
 " Color schemes
 color raggi
 map <Leader>l :color raggi<CR>
-map <Leader>d :color Tomorrow-Night<CR>
+map <Leader>d :color jellybeans<CR>
 
 " Directories for swp files
 set backupdir=~/.vim/backup
