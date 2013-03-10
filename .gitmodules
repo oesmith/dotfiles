@@ -76,3 +76,6 @@
 [submodule "vim/bundle/vim-jellybeans"]
 	path = vim/bundle/vim-jellybeans
 	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
