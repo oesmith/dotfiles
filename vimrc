@@ -66,7 +66,7 @@ set modeline
 set modelines=10
 
 " Color schemes
-color raggi
+color jellybeans
 map <Leader>l :color raggi<CR>
 map <Leader>d :color jellybeans<CR>
 
