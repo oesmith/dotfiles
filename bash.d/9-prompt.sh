@@ -1,9 +1,9 @@
 # pretty prompt
 parse_git_dirty() {
   if [[ -n $(git status -s --ignore-submodules=dirty 2> /dev/null) ]]; then
-    echo -e "\033[31m»\033[0m"
+    echo -e "\001\033[31m\002»\001\033[0m\002"
   else
-    echo -e "\033[32m»\033[0m"
+    echo -e "\001\033[32m\002»\001\033[0m\002"
   fi
 }
 function my_git_prompt_info() {
@@ -11,7 +11,7 @@ function my_git_prompt_info() {
     ref=$(git symbolic-ref HEAD 2> /dev/null)
     echo -e "${ref#refs/heads/} $(parse_git_dirty)"
   else
-    echo "»" 
-  fi  
+    echo "»"
+  fi
 }
-export PS1="\u \033[1m\W\033[0m \$(my_git_prompt_info) "
+export PS1="\u \[\033[1m\]\W\[\033[0m\] \$(my_git_prompt_info) "
