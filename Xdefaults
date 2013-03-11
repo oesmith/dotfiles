@@ -23,8 +23,8 @@ URxvt*intensityStyles: False
 URxvt.keysym.Mod4-v: perl:clipboard:paste
 
 URxvt*cursorColor: #BDBDBD
-URxvt*background: #F3F3F3
-URxvt*foreground: #272727
+URxvt*foreground: #F3F3F3
+URxvt*background: #151515
 URxvt*color0: #000000
 URxvt*color1: #A74C4C
 URxvt*color2: #6D9447
