@@ -8,4 +8,4 @@ function r() {
   fi
 }
 
-alias detmux='kill $(pgrep -f "tmux attach")'
+alias detmux='kill $(pgrep -f "tmux .*attach")'
