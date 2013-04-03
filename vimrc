@@ -66,6 +66,13 @@ set modeline
 set modelines=10
 
 " Color schemes
+let g:jellybeans_overrides = {
+\   'LineNr':       { '256ctermfg': '240', '256ctermbg': '235' },
+\   'StatusLine':   { '256ctermfg': '231', '256ctermbg': '235' },
+\   'StatusLineNC': { '256ctermfg': '240', '256ctermbg': '235' },
+\   'SignColumn':   {                      '256ctermbg': 'Black' }
+\ }
+set fillchars=vert:\ 
 color jellybeans
 map <Leader>l :color raggi<CR>
 map <Leader>d :color jellybeans<CR>
