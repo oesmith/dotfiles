@@ -22,9 +22,6 @@
 [submodule "z"]
 	path = z
 	url = https://github.com/rupa/z
-[submodule "vim/bundle/vim-powerline"]
-	path = vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "vim/bundle/vim-gemfile"]
 	path = vim/bundle/vim-gemfile
 	url = https://github.com/muz/vim-gemfile
