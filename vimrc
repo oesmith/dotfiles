@@ -29,7 +29,7 @@ augroup vimrc_autocmds
 augroup END
 
 " enable mouse interaction (with iTerm)
-set mouse=a
+" set mouse=a
 
 " Searching
 set hlsearch
