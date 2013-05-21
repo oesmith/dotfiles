@@ -1,9 +1,10 @@
 # rails shortcuts
 alias be="bundle exec"
-alias xbe="xvfb-run -a -s '-screen 0 1600x1200x24' bundle exec"
+alias x="xvfb-run -a -s 'screen 0 1600x1200x24'"
+alias xbe="x bundle exec"
 alias dbup="be rake db:setup && be rake db:test:prepare"
-alias dbupc="be rake db:create && be rake db:migrate && be rake db:seed && be rake db:test:prepare"
-alias dbupp="be rake db:setup && be rake db:test:prepare && be rake parallel:create && be rake parallel:prepare"
+alias dbupc="be rake db:create db:migrate db:seed && be rake db:test:prepare"
+alias dbupp="be rake db:setup && be rake db:test:prepare && be rake parallel:create parallel:prepare"
 alias dbdn="be rake db:drop"
 alias rps="xbe rake parallel:spec"
 
