@@ -17,7 +17,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set list listchars=tab:\ \ ,trail:×
+set list listchars=tab:‣\ ,trail:×,eol:¬
 set wrap
 set showbreak=»\ \ \ 
 set linebreak
@@ -51,6 +51,9 @@ map <C-\> :tnext<CR>
 
 " make uses real tabs
 au FileType make set noexpandtab
+
+" go uses real tabs
+au FileType go set noexpandtab
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
