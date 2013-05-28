@@ -1,13 +1,13 @@
-Xft.dpi: 96
-Xft.lcdfilter: lcddefault
-Xft.antialias: 1
-Xft.hinting: 1
-Xft.autohint: 0
-Xft.hintstyle: hintfull
-Xft.rgba: rgb
-*customization: -color
+! Xft.dpi: 96
+! Xft.lcdfilter: lcddefault
+! Xft.antialias: 1
+! Xft.hinting: 1
+! Xft.autohint: 0
+! Xft.hintstyle: hintfull
+! Xft.rgba: rgb
+! *customization: -color
 
-URxvt*font: xft:Source Code Pro for Powerline:size=10
+URxvt*font: xft:Droid Sans Mono Slashed:size=12
 URxvt*letterSpace: -1
 URxvt*jumpScroll: true
 URxvt*loginShell: False
@@ -23,8 +23,8 @@ URxvt*intensityStyles: False
 URxvt.keysym.Mod4-v: perl:clipboard:paste
 
 URxvt*cursorColor: #BDBDBD
-URxvt*foreground: #F3F3F3
-URxvt*background: #151515
+URxvt*background: #F3F3F3
+URxvt*foreground: #151515
 URxvt*color0: #000000
 URxvt*color1: #A74C4C
 URxvt*color2: #6D9447
