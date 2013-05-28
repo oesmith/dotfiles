@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FILES="vim vimrc gvimrc screenrc tm_properties bashrc bash_profile \
-  tmux.conf ackrc Xdefaults"
+  tmux.conf ackrc Xdefaults scrotwm.conf"
 
 mklink() {
   if [[ -z "$2" ]] ; then
