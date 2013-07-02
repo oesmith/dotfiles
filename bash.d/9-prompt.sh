@@ -1,6 +1,6 @@
 # pretty prompt
 ssh_prefix() {
-  if [[ -n "$SSH_PTY" ]] ; then
+  if [[ -n "$SSH_TTY" ]] ; then
     echo "($(hostname)) "
   fi
 }
