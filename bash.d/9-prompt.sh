@@ -1,4 +1,10 @@
 # pretty prompt
+ssh_prefix() {
+  if [[ -n "$SSH_TTY" ]] ; then
+    echo "($(hostname)) "
+  fi
+}
+
 parse_git_dirty() {
   if [[ -n $(git status -s --ignore-submodules=dirty 2> /dev/null) ]]; then
     echo -e "\001\033[31m\002»\001\033[0m\002"
@@ -14,4 +20,4 @@ function my_git_prompt_info() {
     echo "»"
   fi
 }
-export PS1="\u \[\033[1m\]\W\[\033[0m\] \$(my_git_prompt_info) "
+export PS1="$(ssh_prefix)\u \[\033[1m\]\W\[\033[0m\] \$(my_git_prompt_info) "
