@@ -15,12 +15,12 @@ URxvt*loginShell: False
 URxvt*scrollBar: False
 URxvt*saveLines: 10000
 URxvt*cursorBlink: True
-URxvt*perl-ext-common: default,matcher,clipboard
+! URxvt*perl-ext-common: default,matcher,clipboard
 URxvt*urlLauncher: /usr/bin/google-chrome
 URxvt*matcher.button: 1
 URxvt*intensityStyles: False
 
-URxvt.keysym.Mod4-v: perl:clipboard:paste
+! URxvt.keysym.Mod4-v: perl:clipboard:paste
 
 URxvt*cursorColor: #BDBDBD
 URxvt*background: #F3F3F3
