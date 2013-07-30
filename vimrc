@@ -26,6 +26,8 @@ set linebreak
 augroup vimrc_autocmds
   autocmd BufEnter * highlight OverLength cterm=underline
   autocmd BufEnter * match OverLength /\%81v.*/
+  " 100ch lines in java
+  autocmd BufEnter *.java match OverLength /\%101v.*/
 augroup END
 
 " enable mouse interaction (with iTerm)
@@ -106,5 +108,8 @@ function! RunSpec(args)
 endfunction
 map !s :call RunSpec("%:" . <C-r>=line('.')<CR>)<CR>
 map !S :call RunSpec("%")<CR>
+
+" expand %% in command-line to current file dirname
+cabbr <expr> %% expand('%:p:h')
 
 source $HOME/.vimrc.local
