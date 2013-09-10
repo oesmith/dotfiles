@@ -23,12 +23,12 @@ set showbreak=»\ \ \
 set linebreak
 
 " Hilight long lines
-augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength cterm=underline
-  autocmd BufEnter * match OverLength /\%81v.*/
-  " 100ch lines in java
-  autocmd BufEnter *.java match OverLength /\%101v.*/
-augroup END
+"augroup vimrc_autocmds
+"  autocmd BufEnter * highlight OverLength cterm=underline
+"  autocmd BufEnter * match OverLength /\%81v.*/
+"  " 100ch lines in java
+"  autocmd BufEnter *.java match OverLength /\%101v.*/
+"augroup END
 let &colorcolumn="81,".join(range(101,999),",")
 
 " enable mouse interaction (with iTerm)
