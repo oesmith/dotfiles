@@ -7,3 +7,7 @@ if [ -d ~/.dotfiles/bash.d ]; then
   done
   unset i
 fi
+
+if [ -f ~/.bashrc.local ]; then
+  . ~/.bashrc.local
+fi

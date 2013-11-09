@@ -22,3 +22,4 @@ path_rpush /usr/local/sbin
 path_rpush ~/.brew/bin
 path_rpush ~/Projects/Libraries/bin
 path_rpush ~/.rbenv/bin
+path_rpush ~/bin
