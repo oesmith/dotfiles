@@ -23,10 +23,13 @@ set showbreak=»\ \ \
 set linebreak
 
 " Hilight long lines
-augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength cterm=underline
-  autocmd BufEnter * match OverLength /\%81v.*/
-augroup END
+"augroup vimrc_autocmds
+"  autocmd BufEnter * highlight OverLength cterm=underline
+"  autocmd BufEnter * match OverLength /\%81v.*/
+"  " 100ch lines in java
+"  autocmd BufEnter *.java match OverLength /\%101v.*/
+"augroup END
+let &colorcolumn="81,".join(range(101,999),",")
 
 " enable mouse interaction (with iTerm)
 " set mouse=a
@@ -106,5 +109,8 @@ function! RunSpec(args)
 endfunction
 map !s :call RunSpec("%:" . <C-r>=line('.')<CR>)<CR>
 map !S :call RunSpec("%")<CR>
+
+" expand %% in command-line to current file dirname
+cabbr <expr> %% expand('%:p:h')
 
 source $HOME/.vimrc.local

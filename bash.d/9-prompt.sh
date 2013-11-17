@@ -13,11 +13,11 @@ parse_git_dirty() {
   fi
 }
 function my_git_prompt_info() {
-  if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
-    ref=$(git symbolic-ref HEAD 2> /dev/null)
-    echo -e "${ref#refs/heads/} $(parse_git_dirty)"
-  else
-    echo "»"
-  fi
+  # if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
+  #   ref=$(git symbolic-ref HEAD 2> /dev/null)
+  #   echo -e "${ref#refs/heads/} $(parse_git_dirty)"
+  # else
+  echo "»"
+  # fi
 }
 export PS1="$(ssh_prefix)\u \[\033[1m\]\W\[\033[0m\] \$(my_git_prompt_info) "
