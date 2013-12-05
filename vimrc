@@ -22,13 +22,7 @@ set wrap
 set showbreak=»\ \ \ 
 set linebreak
 
-" Hilight long lines
-"augroup vimrc_autocmds
-"  autocmd BufEnter * highlight OverLength cterm=underline
-"  autocmd BufEnter * match OverLength /\%81v.*/
-"  " 100ch lines in java
-"  autocmd BufEnter *.java match OverLength /\%101v.*/
-"augroup END
+" Show right margins
 let &colorcolumn="81,".join(range(101,999),",")
 
 " enable mouse interaction (with iTerm)
@@ -43,6 +37,10 @@ set smartcase
 " Tab completion
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
+
+" Ignore C headers for tab-completion
+" set complete=.,w,b,u,t,i
+set complete=.,w,b,u,t
 
 " Status bar
 set laststatus=2
