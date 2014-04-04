@@ -7,9 +7,9 @@
 ! Xft.rgba: rgb
 ! *customization: -color
 
-URxvt*font: xft:Anonymous Pro:size=12
-! URxvt*letterSpace: -1
-URxvt*lineSpace: 2
+URxvt*font: xft:Droid Sans Mono Slashed:size=12
+URxvt*letterSpace: -1
+URxvt*lineSpace: 3
 URxvt*jumpScroll: true
 URxvt*loginShell: False
 ! URxvt*termName: xterm-256color

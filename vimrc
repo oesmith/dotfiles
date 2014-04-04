@@ -22,13 +22,7 @@ set wrap
 set showbreak=»\ \ \ 
 set linebreak
 
-" Hilight long lines
-"augroup vimrc_autocmds
-"  autocmd BufEnter * highlight OverLength cterm=underline
-"  autocmd BufEnter * match OverLength /\%81v.*/
-"  " 100ch lines in java
-"  autocmd BufEnter *.java match OverLength /\%101v.*/
-"augroup END
+" Show right margins
 let &colorcolumn="81,".join(range(101,999),",")
 
 " enable mouse interaction (with iTerm)
@@ -44,6 +38,10 @@ set smartcase
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
+" Ignore C headers for tab-completion
+" set complete=.,w,b,u,t,i
+set complete=.,w,b,u,t
+
 " Status bar
 set laststatus=2
 
@@ -56,7 +54,7 @@ map <C-\> :tnext<CR>
 au FileType make set noexpandtab
 
 " go uses real tabs
-au FileType go set noexpandtab
+au FileType go set noexpandtab tabstop=2 shiftwidth=2
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
