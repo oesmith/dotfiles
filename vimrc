@@ -110,5 +110,6 @@ map !S :call RunSpec("%")<CR>
 
 " expand %% in command-line to current file dirname
 cabbr <expr> %% expand('%:p:h')
+cabbr <expr> ;; expand('%:p:h')
 
 source $HOME/.vimrc.local
