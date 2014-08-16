@@ -7,5 +7,3 @@ function r() {
     fi
   fi
 }
-
-alias detmux='pgrep -f "tmux .*attach" && kill $(pgrep -f "tmux .*attach")'
