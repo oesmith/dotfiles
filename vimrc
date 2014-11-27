@@ -75,6 +75,7 @@ let g:jellybeans_overrides = {
 \   'StatusLineNC': { '256ctermfg': '240', '256ctermbg': '235' },
 \   'SignColumn':   {                      '256ctermbg': 'Black' }
 \ }
+let g:jellybeans_background_color_256='none'
 set fillchars=vert:\ 
 color jellybeans
 
