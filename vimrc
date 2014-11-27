@@ -1,4 +1,8 @@
-call pathogen#infect()
+if filereadable("$HOME/.vimpathogen")
+  source $HOME/.vimpathogen
+else
+  call pathogen#infect()
+endif
 
 set nocompatible
 
@@ -23,7 +27,7 @@ set showbreak=»\ \ \
 set linebreak
 
 " Show right margins
-let &colorcolumn="81,".join(range(101,999),",")
+let &colorcolumn="81,101"
 
 " enable mouse interaction (with iTerm)
 " set mouse=a
@@ -44,11 +48,6 @@ set complete=.,w,b,u,t
 
 " Status bar
 set laststatus=2
-
-" CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
-map <C-\> :tnext<CR>
-
 
 " make uses real tabs
 au FileType make set noexpandtab
@@ -78,8 +77,6 @@ let g:jellybeans_overrides = {
 \ }
 set fillchars=vert:\ 
 color jellybeans
-map <Leader>l :color raggi<CR>
-map <Leader>d :color jellybeans<CR>
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -88,8 +85,6 @@ set directory=~/.vim/backup
 " Show (partial) command in the status line
 set showcmd
 
-set t_Co=256
-
 " Miscellaneous useful bindings
 nmap <Leader><Leader> :CtrlPMRU<CR>
 nmap <Leader>t :NERDTreeToggle<CR>
@@ -97,18 +92,7 @@ nmap <Leader>p :set paste!<CR>
 nmap <Leader>h :set hlsearch!<CR>
 nmap <Leader>. :e#<CR>
 
-" Powerline
-let g:Powerline_symbols = 'fancy'
-
-" run rspec on current buffer
-function! RunSpec(args)
- let cmd = ":! bundle exec rspec " . a:args
- execute cmd
-endfunction
-map !s :call RunSpec("%:" . <C-r>=line('.')<CR>)<CR>
-map !S :call RunSpec("%")<CR>
-
-" expand %% in command-line to current file dirname
-cabbr <expr> %% expand('%:p:h')
+" expand ;; in command-line to current file dirname
+cabbr <expr> ;; expand('%:p:h')
 
 source $HOME/.vimrc.local
