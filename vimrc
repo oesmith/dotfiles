@@ -73,7 +73,8 @@ let g:jellybeans_overrides = {
 \   'LineNr':       { '256ctermfg': '240', '256ctermbg': '235' },
 \   'StatusLine':   { '256ctermfg': '15',  '256ctermbg': '21' },
 \   'StatusLineNC': { '256ctermfg': '240', '256ctermbg': '235' },
-\   'SignColumn':   {                      '256ctermbg': 'Black' }
+\   'SignColumn':   {                      '256ctermbg': 'Black' },
+\   'ColorColumn':  {                      '256ctermbg': '234' }
 \ }
 let g:jellybeans_background_color_256='none'
 set fillchars=vert:\ 
