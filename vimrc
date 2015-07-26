@@ -93,6 +93,7 @@ nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>p :set paste!<CR>
 nmap <Leader>h :set hlsearch!<CR>
 nmap <Leader>. :e#<CR>
+imap jj <Esc>
 
 " expand ;; in command-line to current file dirname
 cabbr <expr> ;; expand('%:p:h')
