@@ -50,13 +50,13 @@ set complete=.,w,b,u,t
 set laststatus=2
 
 " make uses real tabs
-au FileType make set noexpandtab
+au FileType make setlocal noexpandtab
 
 " go uses real tabs
-au FileType go set noexpandtab tabstop=2 shiftwidth=2
+au FileType go setlocal noexpandtab tabstop=2 shiftwidth=2
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+au FileType python setlocal softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
