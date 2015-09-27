@@ -10,7 +10,7 @@ set number
 set ruler
 syntax on
 
-let mapleader=","
+let mapleader="\<Space>"
 
 " encoding
 set encoding=utf-8
