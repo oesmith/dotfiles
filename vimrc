@@ -98,4 +98,7 @@ imap jj <Esc>
 " expand ;; in command-line to current file dirname
 cabbr <expr> ;; expand('%:p:h')
 
+" fed up with syntastic noise in HTML templates
+let g:syntastic_html_checkers=[]
+
 source $HOME/.vimrc.local
