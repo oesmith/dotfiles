@@ -101,4 +101,9 @@ cabbr <expr> ;; expand('%:p:h')
 " fed up with syntastic noise in HTML templates
 let g:syntastic_html_checkers=[]
 
+" Use ag for grep
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
+
 source $HOME/.vimrc.local
