@@ -96,7 +96,7 @@ nmap <Leader>. :e#<CR>
 imap jj <Esc>
 
 " expand ;; in command-line to current file dirname
-cabbr <expr> ;; expand('%:p:h')
+cabbr <expr> ;; expand('%:h')
 
 " fed up with syntastic noise in HTML templates
 let g:syntastic_html_checkers=[]
