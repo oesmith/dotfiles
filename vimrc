@@ -87,6 +87,9 @@ set directory=~/.vim/backup
 " Show (partial) command in the status line
 set showcmd
 
+" Keep buffers hidden in the background
+set hidden
+
 " Miscellaneous useful bindings
 nmap <Leader><Leader> :CtrlPMRU<CR>
 nmap <Leader>t :NERDTreeToggle<CR>
