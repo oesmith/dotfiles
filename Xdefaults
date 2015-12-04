@@ -6,7 +6,7 @@ Xft.hinting:   1
 Xft.hintstyle: hintfull
 ! *customization: -color
 
-URxvt*font: xft:Source Code Pro:size=13
+URxvt*font: xft:Source Code Pro:size=12
 URxvt*letterSpace: -1
 URxvt*lineSpace: 3
 URxvt*jumpScroll: true
