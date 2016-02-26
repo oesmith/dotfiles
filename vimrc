@@ -87,13 +87,19 @@ set directory=~/.vim/backup
 " Show (partial) command in the status line
 set showcmd
 
+" Keep buffers hidden in the background
+set hidden
+
 " Miscellaneous useful bindings
-nmap <Leader><Leader> :CtrlPMRU<CR>
-nmap <Leader>t :NERDTreeToggle<CR>
-nmap <Leader>p :set paste!<CR>
-nmap <Leader>h :set hlsearch!<CR>
 nmap <Leader>. :e#<CR>
+nmap <Leader><Leader> :CtrlPMRU<CR>
+nmap <Leader>h :set hlsearch!<CR>
+nmap <Leader>p :set paste!<CR>
+nmap <Leader>t :NERDTreeToggle<CR>
 imap jj <Esc>
+
+" Working with markdown notes
+let g:markdown_folding=1
 
 " expand ;; in command-line to current file dirname
 cabbr <expr> ;; expand('%:h')
