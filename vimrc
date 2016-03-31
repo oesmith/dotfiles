@@ -101,6 +101,10 @@ imap jj <Esc>
 " Working with markdown notes
 let g:markdown_folding=1
 
+" Hilighting for Github-flavoured markdown TODOs
+au Filetype markdown syntax match Title " \[ \] "
+au Filetype markdown syntax match Comment "- \[[xX]\].*$"
+
 " expand ;; in command-line to current file dirname
 cabbr <expr> ;; expand('%:h')
 
