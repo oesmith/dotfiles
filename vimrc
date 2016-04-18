@@ -100,6 +100,7 @@ imap jj <Esc>
 
 " Working with markdown notes
 let g:markdown_folding=1
+iabbrev :date: <Esc>"=strftime("%Y%m%d")<CR>pa
 
 " expand ;; in command-line to current file dirname
 cabbr <expr> ;; expand('%:h')
