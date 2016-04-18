@@ -102,6 +102,10 @@ imap jj <Esc>
 let g:markdown_folding=1
 iabbrev :date: <Esc>"=strftime("%Y%m%d")<CR>pa
 
+" Hilighting for Github-flavoured markdown TODOs
+au Filetype markdown syntax match Title " \[ \] "
+au Filetype markdown syntax match Comment "- \[[xX]\].*$"
+
 " expand ;; in command-line to current file dirname
 cabbr <expr> ;; expand('%:h')
 
