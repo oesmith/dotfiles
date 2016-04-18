@@ -103,7 +103,8 @@ let g:markdown_folding=1
 
 " Hilighting for Github-flavoured markdown TODOs
 au Filetype markdown syntax match Title " \[ \] "
-au Filetype markdown syntax match Comment "- \[[xX]\].*$"
+au Filetype markdown syntax match Comment "\s*- \[[xX]\].*$"
+au Filetype markdown syntax match Todo "\s*- \[-\].*$"
 
 " expand ;; in command-line to current file dirname
 cabbr <expr> ;; expand('%:h')
