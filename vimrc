@@ -112,7 +112,6 @@ cabbr <expr> ;; expand('%:h')
 
 " fed up with syntastic noise in HTML templates
 let g:syntastic_html_checkers=[]
-let g:syntastic_markdown_checkers=['proselint']
 
 " Use ag for grep
 if executable('ag')
