@@ -37,3 +37,6 @@
 [submodule "vim/bundle/vim-signify"]
 	path = vim/bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify
+[submodule "vim/bundle/vim-java-imports"]
+	path = vim/bundle/vim-java-imports
+	url = git@github.com:oesmith/vim-java-imports.git
