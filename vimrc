@@ -86,7 +86,7 @@ color jellybeans
 
 " Directories for swp files
 set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+set directory=~/.vim/backup//
 
 " Show (partial) command in the status line
 set showcmd
