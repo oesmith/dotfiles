@@ -1,3 +1,8 @@
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+  . /etc/bashrc
+fi
+
 # load stuff from config dir
 if [ -d ~/.dotfiles/bash.d ]; then
   for i in ~/.dotfiles/bash.d/*.sh; do
