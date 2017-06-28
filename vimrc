@@ -96,10 +96,11 @@ set hidden
 
 " Miscellaneous useful bindings
 nmap <Leader>. :e#<CR>
-nmap <Leader><Leader> :CtrlPMRU<CR>
 nmap <Leader>h :set hlsearch!<CR>
 nmap <Leader>p :set paste!<CR>
-nmap <Leader>t :NERDTreeToggle<CR>
+nmap <Leader><Leader> :History<CR>
+nmap <Leader>t :Tags<CR>
+nmap <c-p> :Files<CR>
 imap jj <Esc>
 
 " Working with markdown notes
