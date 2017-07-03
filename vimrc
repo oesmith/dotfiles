@@ -25,6 +25,7 @@ set list listchars=tab:‣\ ,trail:×,eol:¬
 set wrap
 set showbreak=»\ \ \ 
 set linebreak
+set nojoinspaces
 
 " Show right margins
 let &colorcolumn="81,101"
