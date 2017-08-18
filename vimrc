@@ -99,7 +99,7 @@ set hidden
 nmap <Leader>. :e#<CR>
 nmap <Leader>h :set hlsearch!<CR>
 nmap <Leader>p :set paste!<CR>
-nmap <Leader><Leader> :History<CR>
+nmap <Leader><Leader> :FZFMru<CR>
 nmap <Leader>t :Tags<CR>
 nmap <c-p> :Files<CR>
 imap jj <Esc>
