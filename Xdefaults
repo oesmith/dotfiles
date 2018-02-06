@@ -15,13 +15,17 @@ URxvt*loginShell: False
 URxvt*scrollBar: False
 URxvt*saveLines: 10000
 URxvt*cursorBlink: True
-URxvt*perl-ext-common: default,matcher
-!,clipboard
+URxvt*perl-ext-common: default,matcher,selection-to-clipboard
 URxvt*urlLauncher: /usr/bin/google-chrome
 URxvt*matcher.button: 1
 URxvt*intensityStyles: False
-
-! URxvt.keysym.Mod4-v: perl:clipboard:paste
+! Ctrl-Shift-c/v for copy/paste
+URxvt.iso14755:        false
+URxvt.iso14755_52:     false
+URxvt.keysym.C-M-c:    builtin-string:
+URxvt.keysym.C-M-v:    builtin-string:
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
 
 URxvt*depth: 32
 URxvt*cursorColor: #BDBDBD
