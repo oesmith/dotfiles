@@ -43,3 +43,6 @@
 [submodule "vim/bundle/fzf-mru.vim"]
 	path = vim/bundle/fzf-mru.vim
 	url = https://github.com/pbogut/fzf-mru.vim
+[submodule "vim/bundle/vim-dispatch"]
+	path = vim/bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
