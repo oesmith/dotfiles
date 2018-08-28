@@ -125,4 +125,9 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
 endif
 
+" Kythe (LSP) bindings
+nnoremap gd :<C-u>LspDefinition<CR>
+nnoremap gh :<C-u>LspHover<CR>
+nnoremap gr :<C-u>LspReferences<CR>
+
 source $HOME/.vimrc.local

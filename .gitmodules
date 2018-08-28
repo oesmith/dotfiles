@@ -46,3 +46,9 @@
 [submodule "vim/bundle/vim-dispatch"]
 	path = vim/bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch
+[submodule "vim/bundle/async.vim"]
+	path = vim/bundle/async.vim
+	url = https://github.com/prabirshrestha/async.vim
+[submodule "vim/bundle/vim-lsp"]
+	path = vim/bundle/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp
