@@ -19,6 +19,7 @@ URxvt*perl-ext-common: default,matcher,selection-to-clipboard
 URxvt*urlLauncher: /usr/bin/google-chrome
 URxvt*matcher.button: 1
 URxvt*intensityStyles: False
+URxvt*urgentOnBell: true
 ! Ctrl-Shift-c/v for copy/paste
 URxvt.iso14755:        false
 URxvt.iso14755_52:     false
