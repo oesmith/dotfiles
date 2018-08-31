@@ -27,6 +27,9 @@ set showbreak=»\ \ \
 set linebreak
 set nojoinspaces
 
+" Faster scrolling over SSH
+set scrolljump=10
+
 " Show right margins
 let &colorcolumn="81,101"
 
