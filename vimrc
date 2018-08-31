@@ -109,8 +109,8 @@ nmap <c-p> :Files<CR>
 imap jj <Esc>
 
 " Working with markdown notes
-let g:markdown_folding=1
-iabbrev :date: <Esc>"=strftime("%Y%m%d")<CR>pa
+" let g:markdown_folding=1
+" iabbrev :date: <Esc>"=strftime("%Y%m%d")<CR>pa
 
 " Hilighting for Github-flavoured markdown TODOs
 au Filetype markdown syntax match Title " \[ \] "
