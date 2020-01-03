@@ -79,7 +79,7 @@ set modelines=10
 " Color schemes
 let g:jellybeans_overrides = {
 \   'LineNr':       { '256ctermfg': '240', '256ctermbg': '235' },
-\   'StatusLine':   { '256ctermfg': '15',  '256ctermbg': '21' },
+\   'StatusLine':   { '256ctermfg': '15',  '256ctermbg': '130' },
 \   'StatusLineNC': { '256ctermfg': '240', '256ctermbg': '235' },
 \   'SignColumn':   {                      '256ctermbg': 'Black' },
 \   'ColorColumn':  {                      '256ctermbg': '235' }
