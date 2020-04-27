@@ -7,9 +7,6 @@
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "z"]
-	path = z
-	url = https://github.com/rupa/z
 [submodule "vim/bundle/vim-gemfile"]
 	path = vim/bundle/vim-gemfile
 	url = https://github.com/muz/vim-gemfile
