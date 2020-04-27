@@ -1,7 +1,9 @@
 #!/bin/bash
 
-FILES="vim vimrc gvimrc screenrc tm_properties bashrc bash_profile \
-  tmux.conf ackrc Xdefaults scrotwm.conf colordiffrc"
+FILES="vim vimrc gvimrc bashrc bash_profile tmux.conf ackrc Xdefaults \
+  colordiffrc"
+
+LOCALS="~/.vimrc.local ~/.bashrc.local"
 
 mklink() {
   if [[ -z "$2" ]] ; then
@@ -24,3 +26,8 @@ for i in $FILES ; do
   mklink $(echo $i | tr ':' ' ')
 done
 
+for i in $LOCALS ; do
+  if [[ ! -f "$i" ]] ; then
+    touch "$i"
+  fi
+done
