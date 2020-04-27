@@ -1,9 +1,3 @@
-if filereadable("$HOME/.vimpathogen")
-  source $HOME/.vimpathogen
-else
-  call pathogen#infect()
-endif
-
 set nocompatible
 
 set number
