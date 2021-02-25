@@ -52,3 +52,6 @@
 [submodule "vim/bundle/taskpaper.vim"]
 	path = vim/bundle/taskpaper.vim
 	url = https://github.com/davidoc/taskpaper.vim
+[submodule "vim/bundle/yats.vim"]
+	path = vim/bundle/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim
