@@ -1,0 +1,79 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Rec Mono Linear";
+  font-size: 13pt;
+  min-height: 0px;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: 5px;
+  border-left: 10px;
+  border-right: 10px;
+  border-bottom: 0;
+  border-style: solid;
+  border-color: transparent;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+.horizontal {
+  padding: 3px 0 0 0;
+}
+
+#workspaces {
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+
+#workspaces button {
+  padding: 7px 4px;
+  background-color: #222222;
+  border: 1px solid #333333;
+  color: #cccccc;
+}
+
+#workspaces button.focused {
+  background-color: #442200;
+  border-color: #aa5500;
+  color: #ffffff;
+}
+
+#workspaces button.urgent {
+  border-color: #eb4d4b;
+}
+
+#mode {
+  padding: 0 5px;
+  background-color: #442200;
+  border: 1px solid #aa5500;
+  color: #ffffff;
+}
+
+.modules-right label {
+  padding: 8px 0;
+  margin-left: 32px;
+}
+
+#network {
+  color: #00ff00;
+}
+
+#network.disconnected {
+  color: #ff0000;
+}
+
+#idle_inhibitor {
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+#idle_inhibitor.activated {
+  background-color: #aa5500;
+}

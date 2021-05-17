@@ -3,6 +3,8 @@
 FILES="vim vimrc gvimrc bashrc bash_profile tmux.conf ackrc Xdefaults \
   colordiffrc"
 
+CONFIGS="sway waybar sakura"
+
 LOCALS="~/.vimrc.local ~/.bashrc.local"
 
 mklink() {
@@ -24,6 +26,14 @@ mklink() {
 
 for i in $FILES ; do
   mklink $(echo $i | tr ':' ' ')
+done
+
+for i in $CONFIGS ; do
+  if [[ -d ~/.config/$i ]] ; then
+    echo "Not overwriting ~/.config/$i"
+  else
+    ln -s ~/.dotfiles/config/$i ~/.config/$i
+  fi
 done
 
 for i in $LOCALS ; do
