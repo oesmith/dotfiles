@@ -7,7 +7,8 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "custom/datetime": {
-        "exec": "date +\"%Y-%m-%d %H:%M\""
+        "exec": "date +\"%Y-%m-%d %H:%M\"",
+        "interval": 10
     },
     "idle_inhibitor": {
         "format": "{icon}",
