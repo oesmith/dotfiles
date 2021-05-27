@@ -46,7 +46,7 @@ floating_modifier $mod
 bindsym $mod+Return exec bin/terminal
 
 # start a browser
-bindsum $mod+b exec bin/browser
+bindsym $mod+b exec bin/browser
 # bindsym $mod+b exec MOZ_ENABLE_WAYLAND=1 firefox
 # bindsym $mod+Shift+b exec google-chrome --enable-features=UseOzonePlatform --ozone-platform=wayland
 
