@@ -3,7 +3,7 @@
 FILES="vim vimrc gvimrc bashrc bash_profile tmux.conf ackrc Xdefaults \
   colordiffrc"
 
-CONFIGS="fish sway waybar sakura"
+CONFIGS="fish foot sway waybar sakura"
 
 LOCALS="~/.vimrc.local ~/.bashrc.local"
 

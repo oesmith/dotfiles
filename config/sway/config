@@ -43,11 +43,12 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec bin/foot
+bindsym $mod+Return exec bin/terminal
 
 # start a browser
-bindsym $mod+b exec MOZ_ENABLE_WAYLAND=1 firefox
-bindsym $mod+Shift+b exec google-chrome --enable-features=UseOzonePlatform --ozone-platform=wayland
+bindsum $mod+b exec bin/browser
+# bindsym $mod+b exec MOZ_ENABLE_WAYLAND=1 firefox
+# bindsym $mod+Shift+b exec google-chrome --enable-features=UseOzonePlatform --ozone-platform=wayland
 
 # kill focused window
 bindsym $mod+Shift+q kill
