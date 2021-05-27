@@ -86,13 +86,13 @@ let g:syntastic_html_checkers=[]
 
 " Color schemes
 let g:jellybeans_overrides = {
-\   'LineNr':       { '256ctermfg': '240', '256ctermbg': '235' },
-\   'StatusLine':   { '256ctermfg': '15',  '256ctermbg': '130' },
-\   'StatusLineNC': { '256ctermfg': '240', '256ctermbg': '235' },
-\   'SignColumn':   {                      '256ctermbg': 'Black' },
-\   'ColorColumn':  {                      '256ctermbg': '235' }
+\   'LineNr':       { 'guifg': '585858', 'guibg': '262626', '256ctermfg': '240', '256ctermbg': '235' },
+\   'StatusLine':   { 'guifg': 'ffffff', 'guibg': 'a08000', '256ctermfg': '15',  '256ctermbg': '130' },
+\   'StatusLineNC': { 'guifg': '585858', 'guibg': '262626', '256ctermfg': '240', '256ctermbg': '235' },
+\   'SignColumn':   {                    'guibg': '000000',                      '256ctermbg': 'Black' },
+\   'ColorColumn':  {                    'guibg': '262626',                      '256ctermbg': '235' },
+\   'background':   {                    'guibg': 'none' }
 \ }
-let g:jellybeans_background_color_256='none'
 let g:jellybeans_use_term_italics = 1
 color jellybeans
 
