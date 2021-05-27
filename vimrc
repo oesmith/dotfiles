@@ -87,7 +87,7 @@ let g:syntastic_html_checkers=[]
 " Color schemes
 let g:jellybeans_overrides = {
 \   'LineNr':       { 'guifg': '585858', 'guibg': '262626', '256ctermfg': '240', '256ctermbg': '235' },
-\   'StatusLine':   { 'guifg': 'ffffff', 'guibg': 'a08000', '256ctermfg': '15',  '256ctermbg': '130' },
+\   'StatusLine':   { 'guifg': 'ffffff', 'guibg': 'af5f00', '256ctermfg': '15',  '256ctermbg': '130' },
 \   'StatusLineNC': { 'guifg': '585858', 'guibg': '262626', '256ctermfg': '240', '256ctermbg': '235' },
 \   'SignColumn':   {                    'guibg': '000000',                      '256ctermbg': 'Black' },
 \   'ColorColumn':  {                    'guibg': '262626',                      '256ctermbg': '235' },
