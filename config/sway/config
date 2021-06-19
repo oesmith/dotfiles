@@ -57,10 +57,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run -fn "Rec Mono Linear-13"
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -81,10 +81,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+apostrophe split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+semicolon split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -219,3 +219,7 @@ exec mako
 
 # Set minimum backlight level
 exec light -N 1
+
+# Clipboard management
+exec wl-paste -t text --watch clipman store --max-items=5
+bindsym $mod+slash exec clipman pick
