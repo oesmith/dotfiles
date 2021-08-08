@@ -55,3 +55,6 @@
 [submodule "vim/bundle/yats.vim"]
 	path = vim/bundle/yats.vim
 	url = https://github.com/HerringtonDarkholme/yats.vim
+[submodule "vim/bundle/kotlin-vim"]
+	path = vim/bundle/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim.git
