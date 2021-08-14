@@ -208,6 +208,10 @@ input type:touchpad {
   pointer_accel 0.3
 }
 
+input type:tablet_tool {
+  map_to_output "DP-4"
+}
+
 exec swayidle -w \
          timeout 300 'swaylock -f -c 000000' \
          timeout 600 'swaymsg "output * dpms off"' \

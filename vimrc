@@ -97,7 +97,7 @@ let g:jellybeans_use_term_italics = 1
 color jellybeans
 
 " Expand ;; in command-line to current file dirname
-cabbr <expr> ;; expand('%:h')
+cabbr <expr> ;; fnamemodify(expand('%:h'), ':.')
 
 " Miscellaneous useful bindings
 nmap <Leader>. :e#<CR>
@@ -105,10 +105,12 @@ nmap <Leader>h :set hlsearch!<CR>
 nmap <Leader>p :set paste!<CR>
 nmap <Leader><Leader> :FZFMru<CR>
 nmap <Leader>t :Tags<CR>
-nmap <c-p> :Files<CR>
+nmap <C-p> :Files<CR>
 imap jj <Esc>
 
-" Kythe (LSP) bindings
+" Kythe (LSP)
+let g:lsp_signs_enabled = 1
+let g:lsp_diagnostics_echo_cursor = 1
 nnoremap gd :<C-u>LspDefinition<CR>
 nnoremap gh :<C-u>LspHover<CR>
 nnoremap gr :<C-u>LspReferences<CR>
@@ -116,6 +118,10 @@ nnoremap gr :<C-u>LspReferences<CR>
 " Use ag for grep
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
+endif
+
+if filereadable('/usr/share/doc/fzf/examples/fzf.vim')
+  source /usr/share/doc/fzf/examples/fzf.vim
 endif
 
 source $HOME/.vimrc.local
