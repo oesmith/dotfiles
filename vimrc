@@ -115,6 +115,17 @@ nnoremap gd :<C-u>LspDefinition<CR>
 nnoremap gh :<C-u>LspHover<CR>
 nnoremap gr :<C-u>LspReferences<CR>
 
+" Ruby LSP (solargraph)
+if executable('solargraph')
+  au User lsp_setup call lsp#register_server({
+        \ 'name': 'solargraph',
+        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'bundle exec solargraph stdio']},
+        \ 'initialization_options': {'diagnostics': 'true'},
+        \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'Gemfile'))},
+        \ 'whitelist': ['ruby', 'eruby'],
+        \ })
+endif
+
 " Use ag for grep
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
