@@ -115,6 +115,8 @@ imap jj <Esc>
 " Kythe (LSP)
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_async_completion = 1
+let g:asyncomplete_auto_popup = 1
 nnoremap gd :<C-u>LspDefinition<CR>
 nnoremap gh :<C-u>LspHover<CR>
 nnoremap gr :<C-u>LspReferences<CR>
