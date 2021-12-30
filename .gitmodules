@@ -64,3 +64,6 @@
 [submodule "vim/bundle/gruvbox"]
 	path = vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox
+[submodule "vim/bundle/cocoa.vim"]
+	path = vim/bundle/cocoa.vim
+	url = https://github.com/mvanderkamp/cocoa.vim
