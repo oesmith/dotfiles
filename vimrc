@@ -64,6 +64,11 @@ set showcmd
 " Keep buffers hidden in the background
 set hidden
 
+" True color support
+set termguicolors
+let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+
 " Load the plugin and indent settings for the detected filetype
 filetype plugin indent on
 
