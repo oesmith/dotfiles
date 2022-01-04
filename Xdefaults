@@ -6,8 +6,8 @@ Xft.hinting:   1
 Xft.hintstyle: hintfull
 ! *customization: -color
 
-URxvt*font: xft:Fira Mono:size=12
-URxvt*letterSpace: -2
+URxvt*font: xft:Cascadia Code:size=13:fontfeatures=ss01:weight=medium
+URxvt*letterSpace: -1
 URxvt*lineSpace: 0
 URxvt*jumpScroll: true
 URxvt*loginShell: False
@@ -20,6 +20,7 @@ URxvt*urlLauncher: /usr/bin/google-chrome
 URxvt*matcher.button: 1
 URxvt*intensityStyles: False
 URxvt*urgentOnBell: true
+URxvt*internalBorder: 12
 ! Ctrl-Shift-c/v for copy/paste
 URxvt.iso14755:        false
 URxvt.iso14755_52:     false
