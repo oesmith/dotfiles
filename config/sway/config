@@ -13,7 +13,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Rec Mono Linear 13
+font pango:Cascadia Code 13
 
 default_border pixel 1
 gaps inner 5
@@ -149,7 +149,7 @@ bindsym $mod+Shift+w move workspace to output right
 bindsym $mod+Shift+c reload
 
 # exit
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Shift+e exec swaynag -f 'Cascadia Code 14' -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 # lock screen
 bindsym $mod+Shift+Delete exec "swaylock -f -c 000000"
