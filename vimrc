@@ -1,5 +1,31 @@
 set nocompatible
 
+call plug#begin()
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'davidoc/taskpaper.vim'
+Plug 'ervandew/supertab'
+Plug 'junegunn/fzf.vim'
+Plug 'mhinz/vim-signify'
+Plug 'morhetz/gruvbox'
+Plug 'muz/vim-gemfile'
+Plug 'mvanderkamp/cocoa.vim'
+Plug 'nanotech/jellybeans.vim'
+Plug 'oesmith/vim-java-imports'
+Plug 'pangloss/vim-javascript'
+Plug 'pbogut/fzf-mru.vim'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-surround'
+Plug 'udalov/kotlin-vim'
+call plug#end()
+
 set number
 set ruler
 syntax on
@@ -103,7 +129,7 @@ let g:gruvbox_bold = 0
 let g:gruvbox_italic = 1
 color jellybeans
 nmap <Leader>d :set background=dark<CR>:color jellybeans<CR>
-nmap <Leader>l :set background=light<CR>:color gruvbox<CR>
+nmap <Leader>l :set background=light<CR>:color industry<CR>
 
 " Expand ;; in command-line to current file dirname
 cabbr <expr> ;; fnamemodify(expand('%:h'), ':.')
