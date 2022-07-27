@@ -5,7 +5,7 @@ FILES="vim vimrc gvimrc bashrc bash_profile tmux.conf ackrc Xdefaults \
 
 CONFIGS="fish foot mako sway waybar sakura"
 
-LOCALS="~/.vimrc.local ~/.bashrc.local"
+LOCALS="$HOME/.vimrc.local $HOME/.bashrc.local"
 
 mklink() {
   if [[ -z "$2" ]] ; then
