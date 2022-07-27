@@ -54,7 +54,7 @@ bindsym $mod+b exec bin/browser
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn "Rec Mono Linear-13"
+bindsym $mod+d exec dmenu_run -fn "Cascadia Code-13"
 
 # change focus
 bindsym $mod+h focus left
@@ -201,11 +201,11 @@ input type:keyboard {
 }
 
 input type:touchpad {
-  accel_profile flat
+  accel_profile adaptive
   click_method clickfinger
   natural_scroll enabled
   tap enabled
-  pointer_accel 0.3
+  pointer_accel 0.5
 }
 
 input type:tablet_tool {
@@ -227,3 +227,5 @@ exec light -N 1
 # Clipboard management
 exec wl-paste -t text --watch clipman store --max-items=5
 bindsym $mod+slash exec clipman pick
+
+include /etc/sway/config.d/*
