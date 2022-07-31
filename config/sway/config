@@ -16,6 +16,7 @@ set $mod Mod4
 font pango:Cascadia Code 13
 
 default_border pixel 1
+smart_borders on
 
 # class                 border  bground text    indicator child_border
 client.focused          #AA5500 #442200 #FFFFFF #cc6600   #AA5500
