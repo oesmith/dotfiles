@@ -16,8 +16,6 @@ set $mod Mod4
 font pango:Cascadia Code 13
 
 default_border pixel 1
-gaps inner 5
-gaps outer 5
 
 # class                 border  bground text    indicator child_border
 client.focused          #AA5500 #442200 #FFFFFF #cc6600   #AA5500
@@ -190,7 +188,21 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  swaybar_command waybar
+  colors {
+    background #222222e0
+    focused_workspace #aa5500 #442200 #ffffff
+    inactive_workspace #333333 #222222 #cccccc
+    urgent_workspace #eb4d4b #222222 #cccccc
+  }
+  gaps 5
+  mode hide
+  modifier $mod
+  position bottom
+  separator_symbol " :: "
+  status_command i3status
+  status_edge_padding 16
+  status_padding 8
+  tray_output none
 }
 
 output * bg ~/wallpaper.jpg fill
