@@ -15,9 +15,7 @@ Plug 'oesmith/vim-java-imports'
 Plug 'pangloss/vim-javascript'
 Plug 'pbogut/fzf-mru.vim'
 Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/vim-lsp'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-dispatch'
@@ -143,25 +141,10 @@ nmap <Leader>t :Tags<CR>
 nmap <C-p> :Files<CR>
 imap jj <Esc>
 
-" Kythe (LSP)
-let g:lsp_signs_enabled = 1
-let g:lsp_diagnostics_echo_cursor = 1
-let g:lsp_async_completion = 1
-let g:asyncomplete_auto_popup = 1
-nnoremap gd :<C-u>LspDefinition<CR>
-nnoremap gh :<C-u>LspHover<CR>
-nnoremap gr :<C-u>LspReferences<CR>
-
-" Ruby LSP (solargraph)
-if executable('solargraph')
-  au User lsp_setup call lsp#register_server({
-        \ 'name': 'solargraph',
-        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'bundle exec solargraph stdio']},
-        \ 'initialization_options': {'diagnostics': 'true'},
-        \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'Gemfile'))},
-        \ 'whitelist': ['ruby', 'eruby'],
-        \ })
-endif
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " Use ag for grep
 if executable('ag')
