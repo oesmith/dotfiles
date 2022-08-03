@@ -246,6 +246,9 @@ exec mako
 set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
 exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
 
+# Stop the display from locking when there's active audio streams.
+exec test -x ~/bin/sway-audio-idle-inhibit && ~/bin/sway-audio-idle-inhibit &>/dev/null
+
 # Set minimum backlight level
 exec light -N 1
 
