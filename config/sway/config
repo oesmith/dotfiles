@@ -58,7 +58,8 @@ bindsym $mod+b exec bin/browser
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn "Cascadia Code-13"
+# bindsym $mod+d exec dmenu_run -fn "Cascadia Code-13"
+bindsym $mod+d exec bemenu-run --fn "Cascadia Code 16" --hp 8
 
 bindsym $mod+Shift+bracketright output 'Panasonic Industry Company Panasonic-TV 0x00000101' toggle
 
