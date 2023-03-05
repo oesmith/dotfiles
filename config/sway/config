@@ -199,18 +199,19 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
   colors {
-    background #222222e0
+    # background #222222e0
+    background #222222
     focused_workspace #aa5500 #442200 #ffffff
     inactive_workspace #333333 #222222 #cccccc
     urgent_workspace #eb4d4b #222222 #cccccc
   }
-  gaps 5
-  mode hide
-  modifier $mod
+  # gaps 5
+  # mode hide
+  # modifier $mod
   position bottom
   separator_symbol " :: "
   status_command i3status
-  status_edge_padding 16
+  status_edge_padding 8
   status_padding 8
   tray_output none
 }
