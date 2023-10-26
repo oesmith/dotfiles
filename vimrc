@@ -22,6 +22,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-surround'
 Plug 'udalov/kotlin-vim'
+Plug 'sbdchd/neoformat'
 call plug#end()
 
 set number
@@ -139,6 +140,8 @@ nmap <Leader>p :set paste!<CR>
 nmap <Leader><Leader> :FZFMru<CR>
 nmap <Leader>t :Tags<CR>
 nmap <C-p> :Files<CR>
+nmap <Leader>f :Neoformat<CR>
+xmap <Leader>f :Neoformat<CR>
 imap jj <Esc>
 
 nmap <silent> gd <Plug>(coc-definition)

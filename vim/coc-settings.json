@@ -1,0 +1,25 @@
+{
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"]
+    },
+    "tsserver": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"],
+      "rootPatterns": ["tsconfig.json", "package.json"],
+      "filetypes": ["typescript", "typescriptreact", "typescript.tsx"]
+    },
+    "efm": {
+      "command": "efm-langserver",
+      "rootPatterns": ["tsconfig.json", "package.json"],
+      "filetypes": ["typescript", "typescriptreact", "typescript.tsx"]
+    }
+  },
+  "diagnostic.enableMessage": "never",
+  "diagnostic.checkCurrentLine": false,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "tsserver.useLocalTsdk": true
+}
