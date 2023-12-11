@@ -216,7 +216,7 @@ bar {
   tray_output none
 }
 
-output * bg ~/wallpaper.jpg fill
+# output * bg ~/wallpaper.jpg fill
 
 input type:keyboard {
   xkb_layout "us"
